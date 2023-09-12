@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.echo.spring_mybatis.dao.UserDao">
+
+    <insert id="addUser" parameterType="com.echo.spring_mybatis.pojo.User">
+        insert into user (name,pwd) values (#{name},#{pwd})
+    </insert>
+
+    <update id="updateUser" parameterType="com.echo.spring_mybatis.pojo.User">
+        update user
+        set name = #{name},pwd = #{pwd}
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUserById" parameterType="int">
+        delete from user where id=#{id}
+    </delete>
+
+    <select id="listUser" resultType="com.echo.spring_mybatis.pojo.User">
+        select *
+        from user;
+    </select>
+
+    <select id="listUserByName" parameterType="com.echo.spring_mybatis.pojo.query.UserQuery" resultType="com.echo.spring_mybatis.pojo.User">
+        select *
+        from user
+        <where>
+            <if test="name != null and name != ''">
+                and `name` like concat('%',#{name},'%')
+            </if>
+        </where>
+    </select>
+
+    <select id="queryUserById" parameterType="int" resultType="com.echo.spring_mybatis.pojo.User">
+        select *
+        from user
+        where id=#{id}
+    </select>
+    <!--用于非模糊匹配查询-->
+    <select id="selectUserByName" parameterType="com.echo.spring_mybatis.pojo.query.UserQuery" resultType="com.echo.spring_mybatis.pojo.User">
+        select *
+        from user
+        where name = #{name}
+    </select>
+</mapper>

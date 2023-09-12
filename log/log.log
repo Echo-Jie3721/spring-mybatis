@@ -1,0 +1,17 @@
+2023-09-12 08:39:24.185  INFO 28024 --- [restartedMain] c.e.s.SpringMybatisApplication           : Starting SpringMybatisApplication using Java 11.0.12 on Man with PID 28024 (C:\DataFile_By_User\IdeaProjects\spring_mybatis\target\classes started by 脚踏车man in C:\DataFile_By_User\IdeaProjects\spring_mybatis)
+2023-09-12 08:39:24.191  INFO 28024 --- [restartedMain] c.e.s.SpringMybatisApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-09-12 08:39:24.222  INFO 28024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-12 08:39:24.222  INFO 28024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-12 08:39:24.927  INFO 28024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-12 08:39:24.927  INFO 28024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-12 08:39:24.927  INFO 28024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-12 08:39:24.980  INFO 28024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-12 08:39:24.980  INFO 28024 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
+2023-09-12 08:39:25.311  INFO 28024 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-09-12 08:39:25.438  INFO 28024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-12 08:39:25.471  INFO 28024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-12 08:39:25.471  INFO 28024 --- [restartedMain] c.e.s.SpringMybatisApplication           : Started SpringMybatisApplication in 1.617 seconds (JVM running for 2.397)
+2023-09-12 08:39:32.899  INFO 28024 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-12 08:39:32.905  INFO 28024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-12 08:39:32.905  INFO 28024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-09-12 08:39:33.027  INFO 28024 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
